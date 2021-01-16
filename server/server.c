@@ -14,10 +14,22 @@
 
 int main(int argc,char *argv[])
 {
+	/*
+	  * 
+	  *argc ---- 指示程序启动时命令行参数的个数。
+	  *
+	  *argv ---- 则包含具体的参数字符串。
+	  *
+
+	 */
 	if (argc != 2)
 	{
 		printf("Using:./server port\nExample:./server 5005\n\n");
-		return -1;
+		return -1; 
+		/*
+		  *return的意思是返回，只要是函数，都可以用return来退出该函数，不执行剩下的所有代码
+		  *程序返回-1，非成功结束，但是是正常结束 
+		 */
 	}
 
 	// 第1步：创建服务端的socket。
